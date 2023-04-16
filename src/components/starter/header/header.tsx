@@ -1,32 +1,21 @@
 import { component$ } from '@builder.io/qwik';
-import { QwikLogo } from '../icons/qwik';
-import styles from './header.module.css';
+
+import styles from './header.module.scss';
 
 export default component$(() => {
   return (
-    <header class={styles.header}>
+    <header class={ styles.header + ' flex justify-around mt-4' }>
+      <nav class="flex pt-6">
+        <a class="px-6 font-bold" href="#">Inicio</a>
+        <a class="px-6 font-bold" href="#">Servicio</a>
+        <a class="px-6 font-bold" href="#">Sobre nosotros</a>
+        <a class="px-6 font-bold" href="#">Registro</a>
+      </nav>
       <div class={styles.logo}>
-        <a href="/" title="qwik">
-          <QwikLogo />
+        <a href="/" title="OTTOBY">
+          <img src="assets/logo.svg" alt="Logo OTTOBY" width={ 120 } />
         </a>
       </div>
-      <ul>
-        <li>
-          <a href="https://qwik.builder.io/docs/components/overview/" target="_blank">
-            Docs
-          </a>
-        </li>
-        <li>
-          <a href="https://qwik.builder.io/examples/introduction/hello-world/" target="_blank">
-            Examples
-          </a>
-        </li>
-        <li>
-          <a href="https://qwik.builder.io/tutorial/welcome/overview/" target="_blank">
-            Tutorials
-          </a>
-        </li>
-      </ul>
     </header>
   );
 });

@@ -12,6 +12,7 @@ specifiers:
   eslint-plugin-qwik: 0.101.0
   postcss: ^8.4.16
   prettier: 2.8.7
+  sass: ^1.62.0
   tailwindcss: ^3.1.8
   typescript: 5.0.3
   undici: 5.21.0
@@ -30,10 +31,11 @@ devDependencies:
   eslint-plugin-qwik: 0.101.0_eslint@8.37.0
   postcss: 8.4.21
   prettier: 2.8.7
+  sass: 1.62.0
   tailwindcss: 3.3.1_postcss@8.4.21
   typescript: 5.0.3
   undici: 5.21.0
-  vite: 4.2.1_@types+node@18.15.11
+  vite: 4.2.1_g772r5w5ng27elj5pzc7q7vnhy
   vite-tsconfig-paths: 3.5.0_vite@4.2.1
 
 packages:
@@ -1443,6 +1445,10 @@ packages:
     engines: {node: '>= 4'}
     dev: true
 
+  /immutable/4.3.0:
+    resolution: {integrity: sha512-0AOCmOip+xgJwEVTQj1EfiDDOkPmuyllDuTuEX+DDXUgapLAsBIfkg3sxCYyCEA8mQqZrrxPUGjcOQ2JS3WLkg==}
+    dev: true
+
   /import-fresh/3.3.0:
     resolution: {integrity: sha512-veYYhQa+D1QBKznvhUHxb8faxlrwUnxseDAbAp457E0wLNio2bOSKnjYDhMj+YiAq61xrMGhQk9iXVk5FzgQMw==}
     engines: {node: '>=6'}
@@ -2526,6 +2532,16 @@ packages:
       is-regex: 1.1.4
     dev: true
 
+  /sass/1.62.0:
+    resolution: {integrity: sha512-Q4USplo4pLYgCi+XlipZCWUQz5pkg/ruSSgJ0WRDSb/+3z9tXUOkQ7QPYn4XrhZKYAK4HlpaQecRwKLJX6+DBg==}
+    engines: {node: '>=14.0.0'}
+    hasBin: true
+    dependencies:
+      chokidar: 3.5.3
+      immutable: 4.3.0
+      source-map-js: 1.0.2
+    dev: true
+
   /semver/7.4.0:
     resolution: {integrity: sha512-RgOxM8Mw+7Zus0+zcLEUn8+JfoLpj/huFTItQy2hsM4khuC1HYRDp0cU482Ewn/Fcy6bCjufD8vAj7voC66KQw==}
     engines: {node: '>=10'}
@@ -2921,12 +2937,12 @@ packages:
       globrex: 0.1.2
       recrawl-sync: 2.2.3
       tsconfig-paths: 4.2.0
-      vite: 4.2.1_@types+node@18.15.11
+      vite: 4.2.1_g772r5w5ng27elj5pzc7q7vnhy
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /vite/4.2.1_@types+node@18.15.11:
+  /vite/4.2.1_g772r5w5ng27elj5pzc7q7vnhy:
     resolution: {integrity: sha512-7MKhqdy0ISo4wnvwtqZkjke6XN4taqQ2TBaTccLIpOKv7Vp2h4Y+NpmWCnGDeSvvn45KxvWgGyb0MkHvY1vgbg==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -2956,6 +2972,7 @@ packages:
       postcss: 8.4.21
       resolve: 1.22.2
       rollup: 3.20.2
+      sass: 1.62.0
     optionalDependencies:
       fsevents: 2.3.2
     dev: true
