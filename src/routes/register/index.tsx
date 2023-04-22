@@ -1,9 +1,6 @@
-import { component$, useStylesScoped$ } from '@builder.io/qwik';
-import styles from './register.scss';
+import { component$ } from '@builder.io/qwik';
 
 export default component$(() => {
-  useStylesScoped$(styles);
-
   return (
     <div class="section">
       <div class="container center">

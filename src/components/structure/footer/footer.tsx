@@ -7,10 +7,10 @@ export default component$(() => {
 
   return (
     <footer>
-      <a href="https://www.ottoby.app/" target="_blank" class={styles.anchor}>
-        Made with ♡ by OTTOBY.app
-        <span class={styles.spacer}>|</span>
-        <span>{serverTime.value.date}</span>
+      <a href="https://www.ottoby.app/" target="_blank" class={ styles.anchor }>
+        Made with ♡ by OTTOBY
+        <span class={ styles.spacer }>|</span>
+        <span>©{ serverTime.value.date } LatamCódigo - Todos los derechos reservados.</span>
       </a>
     </footer>
   );
