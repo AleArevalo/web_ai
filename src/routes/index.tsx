@@ -14,12 +14,12 @@ export default component$(() => {
       <div class="section">
         <div class="container mx-auto">
           <div class="flex flex-wrap justify-center">
-            {imagesMain.map((link, index) => (
-              <div key={index} class="w-full sm:w-1/2 md:w-1/5 p-4 flex flex-col items-center">
+            { imagesMain.map((link, index) => (
+              <div key={ index } class="w-full sm:w-1/2 md:w-1/5 p-4 flex flex-col items-center">
                 <img
                   src={ link }
-                  alt={`Image ${index}`}
-                  class={`w-full flex-1 ${index % 2 === 1 ? "order-1" : "order-2"}`}
+                  alt={ `Image ${index}` }
+                  class={ `sm:w-full flex-1 ${ index % 2 === 1 ? 'order-1' : 'order-2' }` }
                 />
               </div>
             ))}
